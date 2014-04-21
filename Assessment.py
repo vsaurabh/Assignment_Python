@@ -133,6 +133,28 @@ def key_error():
 	except KeyError:
 		print "KeyError: because the key is not in dict1"
 
+'''20.) What will be the output of the following program ?
+       for x in [1, 2, 3, 4]:
+            print x
+        Ans.) 1
+			  2
+			  3
+			  4
+       for i  in range(10):
+            print i, i*i, i*i*i
+		 Ans.)  0,0,0
+			    1 1 1
+				2 4 8
+				3 9 27
+				4 16 64
+				5 25 125
+				6 36 216
+				7 49 343
+				8 64 512
+				9 81 729'''
+
+
+
 def main():
 	mul_assignment()
 	swapping_value(4,5)
