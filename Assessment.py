@@ -73,6 +73,8 @@ def string_opration():
 def key_value():
 	d = {5:'value',1:'value1','key3':'value2','dkey':[1,2]}
 	print "problem 10 => Keys",d.keys(),'values=>',d.values()
+	'''11.) Write the program to sorts keys in dictionary ?'''
+	print "problem 11 => Soarted Keys",sorted(d.keys())
 
 
 
