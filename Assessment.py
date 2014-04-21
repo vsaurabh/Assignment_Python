@@ -83,6 +83,15 @@ def unpack_dict():
 	a,b,c,d = {'key':'value','key1':'value1','key2':'value2','key4':[1,2]}
 	print "problem 13 =>", a,b,c,d
 
+'''14.) what is slice in string ? Give an one example ?
+	Ans.) An object usually containing a portion of a sequence or string so when we want only some portion or an ordered portion of a string we use slicing.
+	Ex.) string[start:stop:step] '''
+def string_slice():
+	string = '123456789'
+	print "problem 14 =>", string[1:8:2], string[0:8:2], string[::-1]
+
+
+
 def main():
 	mul_assignment()
 	swapping_value(4,5)
@@ -95,6 +104,8 @@ def main():
 	string_opration()
 	key_value()
 	unpack_dict()
+	string_slice()
+
 
 if __name__ == '__main__':
 	main()
