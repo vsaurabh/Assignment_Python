@@ -15,9 +15,20 @@ def swapping_value(a,b):
 	a,b = b,a
 	print "After swapping=>" , a,b
 
+'''3.) What will be the output of the following program ? : cube = lambda x: x ** 3
+	Ans.) when we give any value of x than it will give cube of that number.
+    Ex.) x=4 o/p : cube = 64'''
+
+def lambda_fun(x):
+    '''function for problem lambda function'''
+    print "problem 3 =>"
+    cube = lambda x: x ** 3
+    print cube(x)
+
 def main():
 	mul_assignment()
 	swapping_value(4,5)
+	lambda_fun(7)
 
 
 if __name__ == '__main__':
