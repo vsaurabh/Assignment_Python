@@ -97,6 +97,12 @@ def remove_whitespace():
 	print "problem 15 =>",string.strip()
 	print string.rstrip(),string.lstrip()
 
+'''16.) What is differnce b/w immutable and mutable object ? Give an one example ?
+	Ans.) Immutable object cannot be changed after created, but mutable object can be changed
+	Ex.) tuple is immutable.
+		list is mutable'''
+
+
 
 def main():
 	mul_assignment()
