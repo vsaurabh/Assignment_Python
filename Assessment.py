@@ -21,14 +21,23 @@ def swapping_value(a,b):
 
 def lambda_fun(x):
     '''function for problem lambda function'''
-    print "problem 3 =>"
     cube = lambda x: x ** 3
-    print cube(x)
+    print "problem 3 =>", cube(x)
+
+'''4.) What will be the output of the following program?
+	Ans.) when we give any value of a than it will give square of that number and assign to x.
+	Ex.) a = 6 : o/p : x = 36'''
+x = 2
+def f(a):
+	'''function for problem lambda function'''
+	x = a*a
+	print "problem 4 =>", x
 
 def main():
 	mul_assignment()
 	swapping_value(4,5)
 	lambda_fun(7)
+	f(6)
 
 
 if __name__ == '__main__':
