@@ -46,6 +46,13 @@ def num_divisable():
 		if i%15==0:
 			print i,
 
+'''7.) What will be the output of the following program? l = [i**i for i in range(10) if i%2==0]
+	Ans.) this will give list of the square of num which is divisable by 2 up to 10
+	[1, 4, 256, 46656, 16777216]'''
+def list_com():
+	l = [i**i for i in range(10) if i%2==0]
+	print "\n problem 7 =>", l
+
 def main():
 	mul_assignment()
 	swapping_value(4,5)
@@ -53,6 +60,7 @@ def main():
 	f(6)
 	keyword_arg(a=1,b='a',c='problem 5')
 	num_divisable()
+	list_com()
 
 
 if __name__ == '__main__':
