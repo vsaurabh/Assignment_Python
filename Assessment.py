@@ -1,4 +1,5 @@
 ''' 1.) It is possible to do multiple assignments at once ? Give an example of one ?
+
 	Ans.) Yes '''
 
 def mul_assignment():
@@ -16,6 +17,7 @@ def swapping_value(a,b):
 	print "After swapping=>" , a,b
 
 '''3.) What will be the output of the following program ? : cube = lambda x: x ** 3
+
 	Ans.) when we give any value of x than it will give cube of that number.
     Ex.) x=4 o/p : cube = 64'''
 
@@ -25,6 +27,7 @@ def lambda_fun(x):
     print "problem 3 =>", cube(x)
 
 '''4.) What will be the output of the following program?
+
 	Ans.) when we give any value of a than it will give square of that number and assign to x.
 	Ex.) a = 6 : o/p : x = 36'''
 x = 2
@@ -33,11 +36,16 @@ def f(a):
 	x = a*a
 	print "problem 4 =>", x
 
+'''5.) Write program using keyword argument in function ?'''
+def keyword_arg(**keyword_argument):
+	print "problem 4 =>",len(keyword_argument),keyword_argument
+
 def main():
 	mul_assignment()
 	swapping_value(4,5)
 	lambda_fun(7)
 	f(6)
+	keyword_arg(a=1,b='a',c='problem 5')
 
 
 if __name__ == '__main__':
