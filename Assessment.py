@@ -99,8 +99,9 @@ def remove_whitespace():
 
 '''16.) What is differnce b/w immutable and mutable object ? Give an one example ?
 	Ans.) Immutable object cannot be changed after created, but mutable object can be changed.
-	Ex.) tuple is immutable.
-		list is mutable.'''
+	Ex.) tuple is immutable because we can not add or remove new items.
+		list is mutable because we can add or remove new items.'''
+
 
 '''17.) Create a new list is original with three elements ? Assign this list to a new variable as reference ?
 		Append a new value into reference ? What is the output for original list ?'''
@@ -110,6 +111,13 @@ def list_reference():
 	new_l.append('ipython')
 	print "problem 17 =>", 'original list =>',l
 
+'''18.) What is IndexError ? Give an one example ?
+	ans.) In any sequence there is an index value which represent a perticular position 
+	when we give the greter index value which is not present in that case it will through IndexError.'''
+def index_error():
+	list1 = [1,2,3,4]
+	print "problem 18 =>", list1[2]
+	#print list1[5] '''this will through IndexError because the index value is out of range'''
 
 
 def main():
@@ -127,6 +135,6 @@ def main():
 	string_slice()
 	remove_whitespace()
 	list_reference()
-
+	index_error()
 if __name__ == '__main__':
 	main()
