@@ -61,6 +61,14 @@ def argument_func(*argument):
 	for i in argument:
 		print i
 
+'''9.) Write program to changes all uppercase letters to lowercase and all lowercase to uppercase using string method ?'''
+def string_opration():
+	print "problem 9 =>"
+	string_lower = 'lower to upper'
+	string_upper = 'UPPER TO LOWER'
+	print 'from lower to UPPER =>', string_lower.upper()
+	print 'from UPPER to lower =>', string_upper.lower()
+
 def main():
 	mul_assignment()
 	swapping_value(4,5)
@@ -70,6 +78,7 @@ def main():
 	num_divisable()
 	list_com()
 	argument_func(1,2,3,4,5)
+	string_opration()
 
 
 if __name__ == '__main__':
