@@ -63,11 +63,11 @@ def argument_func(*argument):
 
 '''9.) Write program to changes all uppercase letters to lowercase and all lowercase to uppercase using string method ?'''
 def string_opration():
-	print "problem 9 =>"
-	string_lower = 'lower to upper'
-	string_upper = 'UPPER TO LOWER'
-	print 'from lower to UPPER =>', string_lower.upper()
-	print 'from UPPER to lower =>', string_upper.lower()
+	string = 'This is STRING contain lower and UPPERCASE letter'
+	print 'problem 9 =>swap UPPER to lower =>', string.swapcase()
+
+
+'''10.) What is an key and value ? Give an example of each one ?'''
 
 def main():
 	mul_assignment()
