@@ -117,8 +117,21 @@ def list_reference():
 def index_error():
 	list1 = [1,2,3,4]
 	print "problem 18 =>", list1[2]
-	#print list1[5] '''this will through IndexError because the index value is out of range'''
+	try:
+		print list1[5]
+	except IndexError:
+		print "IndexError: because the index value is out of range"
 
+
+'''19.) What is keyError ? Give an one example ?
+	Ans.) keyError is occurred in dictionary when we give the key which is not present in dictionary'''
+def key_error():
+	dict1 = {1:'python',2:'assessment'}
+	print "problem 19 =>", dict1[2]
+	try:
+		print dict1[3]
+	except KeyError:
+		print "KeyError: because the key is not in dict1"
 
 def main():
 	mul_assignment()
@@ -136,5 +149,7 @@ def main():
 	remove_whitespace()
 	list_reference()
 	index_error()
+	key_error()
+
 if __name__ == '__main__':
 	main()
