@@ -176,6 +176,11 @@ def reverse_list():
 	print "This is original list=>", list1
 	print "This is reversed list=>", reversed_list1
 
+'''23.) Write program using join method joins a list of strings.'''
+def list_join():
+	list_strings = ['This','is','Python','Assessment']
+	print "problem 23 =>", ' '.join(list_strings)
+
 
 def main():
 	mul_assignment()
@@ -196,6 +201,7 @@ def main():
 	key_error()
 	zip_list()
 	reverse_list()
+	list_join()
 
 if __name__ == '__main__':
 	main()
