@@ -20,7 +20,6 @@ def swapping_value(a,b):
 
 	Ans.) when we give any value of x than it will give cube of that number.
     Ex.) x=4 o/p : cube = 64'''
-
 def lambda_fun(x):
     '''function for problem lambda function'''
     cube = lambda x: x ** 3
@@ -38,7 +37,14 @@ def f(a):
 
 '''5.) Write program using keyword argument in function ?'''
 def keyword_arg(**keyword_argument):
-	print "problem 4 =>",len(keyword_argument),keyword_argument
+	print "problem 5 =>",len(keyword_argument),keyword_argument
+
+'''6.) Prints the number till 1000 those are diviable by both 3 & 5 ?'''
+def num_divisable():
+	print "problem 6 =>"
+	for i in range(1,1001):
+		if i%15==0:
+			print i,
 
 def main():
 	mul_assignment()
@@ -46,6 +52,7 @@ def main():
 	lambda_fun(7)
 	f(6)
 	keyword_arg(a=1,b='a',c='problem 5')
+	num_divisable()
 
 
 if __name__ == '__main__':
