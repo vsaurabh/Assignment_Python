@@ -53,6 +53,14 @@ def list_com():
 	l = [i**i for i in range(10) if i%2==0]
 	print "\n problem 7 =>", l
 
+'''8.) What is an argument? Give an one example ?
+	Ans.) An argument is a value which we pass when we called a function. Explaination given below '''
+def argument_func(*argument):
+	print "problem 8 =>"
+	argu = [argument]
+	for i in argument:
+		print i
+
 def main():
 	mul_assignment()
 	swapping_value(4,5)
@@ -61,6 +69,7 @@ def main():
 	keyword_arg(a=1,b='a',c='problem 5')
 	num_divisable()
 	list_com()
+	argument_func(1,2,3,4,5)
 
 
 if __name__ == '__main__':
