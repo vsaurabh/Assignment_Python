@@ -67,7 +67,14 @@ def string_opration():
 	print 'problem 9 =>swap UPPER to lower =>', string.swapcase()
 
 
-'''10.) What is an key and value ? Give an example of each one ?'''
+'''10.) What is an key and value ? Give an example of each one ?
+	Ans.) Key is an unique object in dictionory which has a value, we can search value according to their key. 
+	Ex.) {key:value}'''
+def key_value():
+	d = {5:'value',1:'value1','key3':'value2','dkey':[1,2]}
+	print "problem 10 => Keys",d.keys(),'values=>',d.values()
+
+
 
 def main():
 	mul_assignment()
@@ -79,6 +86,7 @@ def main():
 	list_com()
 	argument_func(1,2,3,4,5)
 	string_opration()
+	key_value()
 
 
 if __name__ == '__main__':
