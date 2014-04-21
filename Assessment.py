@@ -75,7 +75,8 @@ def key_value():
 	print "problem 10 => Keys",d.keys(),'values=>',d.values()
 	'''11.) Write the program to sorts keys in dictionary ?'''
 	print "problem 11 => Soarted Keys",sorted(d.keys())
-
+	'''12.) wirte the program in dictionary and convert dictionary into list of tuples ?'''
+	print "problem 12 => List of tuples", d.items()
 
 
 def main():
