@@ -153,6 +153,28 @@ def key_error():
 				8 64 512
 				9 81 729'''
 
+'''21.) What is the syntax of zip in list ? when we want to iterate over two lists together ?
+	Ans.) syntax: zip([list1],[list2]).
+			if we want to do opration like equality on same position on both lists,string than we use zip'''
+def zip_list():
+	list1 = [1,2,3]
+	list2 = [4,2,5]
+	print "problem 21 =>", zip(list1,list2)
+	for a,b in zip(list1,list2):
+		if a==b:
+			print "a & b equal", a
+		else:
+			print "a & b unequal", a*b, a+b
+
+'''22.) Write a function reverse to reverse a list. Can you do this without using list slicing ?'''
+def reverse_list():
+	list1 = [1,2,3,4]
+	reversed_list1 = []
+	for i in reversed(list1):
+		reversed_list1.append(i)
+	print "problem 22 =>"
+	print "This is original list=>", list1
+	print "This is reversed list=>", reversed_list1
 
 
 def main():
@@ -172,6 +194,8 @@ def main():
 	list_reference()
 	index_error()
 	key_error()
+	zip_list()
+	reverse_list()
 
 if __name__ == '__main__':
 	main()
