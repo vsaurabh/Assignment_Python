@@ -78,6 +78,10 @@ def key_value():
 	'''12.) wirte the program in dictionary and convert dictionary into list of tuples ?'''
 	print "problem 12 => List of tuples", d.items()
 
+'''13.) write the program to unpack item in dictionary ?'''
+def unpack_dict():
+	a,b,c,d = {'key':'value','key1':'value1','key2':'value2','key4':[1,2]}
+	print "problem 13 =>", a,b,c,d
 
 def main():
 	mul_assignment()
@@ -90,7 +94,7 @@ def main():
 	argument_func(1,2,3,4,5)
 	string_opration()
 	key_value()
-
+	unpack_dict()
 
 if __name__ == '__main__':
 	main()
