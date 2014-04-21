@@ -90,6 +90,12 @@ def string_slice():
 	string = '123456789'
 	print "problem 14 =>", string[1:8:2], string[0:8:2], string[::-1]
 
+'''15.) How to remove the whitespace in string in staring and ending place ? Give an one example ?
+	Ans.) we remove whitespace by using strip.'''
+def remove_whitespace():
+	string = '        string containg spaces     '
+	print "problem 15 =>",string.strip()
+	print string.rstrip(),string.lstrip()
 
 
 def main():
@@ -105,7 +111,7 @@ def main():
 	key_value()
 	unpack_dict()
 	string_slice()
-
+	remove_whitespace()
 
 if __name__ == '__main__':
 	main()
