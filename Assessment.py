@@ -98,9 +98,17 @@ def remove_whitespace():
 	print string.rstrip(),string.lstrip()
 
 '''16.) What is differnce b/w immutable and mutable object ? Give an one example ?
-	Ans.) Immutable object cannot be changed after created, but mutable object can be changed
+	Ans.) Immutable object cannot be changed after created, but mutable object can be changed.
 	Ex.) tuple is immutable.
-		list is mutable'''
+		list is mutable.'''
+
+'''17.) Create a new list is original with three elements ? Assign this list to a new variable as reference ?
+		Append a new value into reference ? What is the output for original list ?'''
+def list_reference():
+	l = ['python','c','ruby']
+	new_l = l
+	new_l.append('ipython')
+	print "problem 17 =>", 'original list =>',l
 
 
 
@@ -118,6 +126,7 @@ def main():
 	unpack_dict()
 	string_slice()
 	remove_whitespace()
+	list_reference()
 
 if __name__ == '__main__':
 	main()
